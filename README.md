@@ -45,7 +45,7 @@ screen
 
 ## Useful commands
 ```
-screen -ls # Shows all your connections
-CTRL + A + D # Disconnect from current screen session
+screen -ls              # Shows all your connections
+CTRL + A + D            # Disconnect from current screen session
 screen -r [screen name] # Connect to suspended screen session
 ```
