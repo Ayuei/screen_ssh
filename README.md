@@ -1,5 +1,9 @@
 # screen_ssh
-Simple script to setup an SSH through a screen
+Simple script to setup an SSH through a screen. 
+
+## What is this for or how do I use this?
+This is a script that I use to manage a home-based screen server, I've set up a RPi Zero W to manage all my screen sessions with this script. 
+This keeps all my connections persistent, even if I turn off my own computer (RPi is very low power, so I can keep it on 24/7).
 
 ## Installation
 
@@ -29,4 +33,3 @@ OR
 ```bash
 sshc [ssh server name]
 ```
-
