@@ -24,6 +24,11 @@ Host [server alias name]
   port [SSH port, usually 22]
 ```
 
+I highly recommend you put this in your ~/.bashrc for your SSH server you're connecting to:
+```bash
+IGNOREEOF=10
+```
+This ensure that you do not accidently quit the bash session while trying to detach from the screen!
 
 ## Usage
 ```bash
@@ -32,4 +37,15 @@ sshc -n [name_of_screen] -s [ssh server name/ip]
 OR
 ```bash
 sshc [ssh server name]
+```
+
+## Dependencies
+bash
+screen
+
+## Useful commands
+```
+screen -ls # Shows all your connections
+CTRL + A + D # Disconnect from current screen session
+screen -r [screen name] # Connect to suspended screen session
 ```
