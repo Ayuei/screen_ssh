@@ -1,11 +1,5 @@
-alias pbcopy='xsel --clipboard --input'
-alias pbpaste='xsel --clipboard --output'
-
 sshc (){ $HOME/scripts/sshc "$@"; }
-alias setuptun="$HOME/scripts/setup_tunnel.sh"
-alias tunkpalive="$HOME/scripts/keep_alive_tunnel.sh"
 alias scrn="/usr/bin/screen"
-alias ffxiv_ping_miti="$HOME/scripts/setup_miti.sh"
 
 skill () {
     arg=${1}
