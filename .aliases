@@ -12,10 +12,5 @@ skill () {
     screen -X -S $arg quit
 }
 
-keep_alive () {
-	while [ 1 ] ; do ping -c 2 bracewell.hpc.csiro.au ; sleep 600 ; done
-	while [ 1 ] ; do ping -c 2 vpn.csiro.au ; sleep 600 ; done
-}
-
 # Scree Rename
 screen_mv(){screen -S $1 -X sessionname $2}
