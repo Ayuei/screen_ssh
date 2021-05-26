@@ -1,0 +1,21 @@
+alias pbcopy='xsel --clipboard --input'
+alias pbpaste='xsel --clipboard --output'
+
+sshc (){ $HOME/scripts/sshc "$@"; }
+alias setuptun="$HOME/scripts/setup_tunnel.sh"
+alias tunkpalive="$HOME/scripts/keep_alive_tunnel.sh"
+alias scrn="/usr/bin/screen"
+alias ffxiv_ping_miti="$HOME/scripts/setup_miti.sh"
+
+skill () {
+    arg=${1}
+    screen -X -S $arg quit
+}
+
+keep_alive () {
+	while [ 1 ] ; do ping -c 2 bracewell.hpc.csiro.au ; sleep 600 ; done
+	while [ 1 ] ; do ping -c 2 vpn.csiro.au ; sleep 600 ; done
+}
+
+# Scree Rename
+screen_mv(){screen -S $1 -X sessionname $2}
